@@ -1,0 +1,38 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "small" {
+    @media #{$smartphone-home} {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "medium-portrait" {
+    @media #{$tablet-home} and (orientation : portrait) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "medium" {
+    @media #{$tablet-home} {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "small-medium" {
+    // respond to medium and small
+    @media #{$mobile} {
+      @content;
+    }
+  }
+  @else if $breakpoint == "medium-large" {
+    // respond to medium and bigweb
+    @media #{$tabletdesktop-home} {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "large" {
+    @media #{$desktop} {
+      @content;
+    }
+  }
+}

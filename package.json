@@ -1,0 +1,19 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "To run this project hit your console with",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-connect": "^2.2.0",
+    "gulp-jade": "^1.0.0",
+    "gulp-load-plugins": "^0.8.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-stylus": "^2.0.1"
+  }
+}
