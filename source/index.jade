@@ -2,8 +2,14 @@ extends views/layout
 
 block body
 
-  include views/components/header
-
-  
-
-  include views/components/footer
+    include views/components/header
+    #wrapper
+      section
+        ul#gallery
+          each val, index in ['I Learning Front End', 'I Enjoy Studying', 'I like teach others', 'Sometimes, I like loneliness', 'Be better every day']
+            li
+              a(href="images/" + "0" + ".jpg", target="_blank")
+                img(src="images/" + "0" + ".jpg", alt="")
+                p= val
+      
+    include views/components/footer
