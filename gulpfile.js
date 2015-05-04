@@ -18,15 +18,16 @@ gulp.task('views', function () {
 });
 
 gulp.task('stylus', function () {
-  gulp.src('source/stylus/main.styl')
+  gulp.src('source/stylus/*.styl')
     .pipe(plugins.stylus())
     .pipe(gulp.dest('./dist/styles'));
 });
 
 gulp.task('css', function () {
-  gulp.src('./dist/styles/main.css')
+  gulp.src('./dist/styles/*.css')
     .pipe(plugins.connect.reload());
 });
+
 
 gulp.task('js', function () {
   gulp.src('source/javascript/main.js')
