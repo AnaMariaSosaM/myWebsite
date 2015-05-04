@@ -8,7 +8,7 @@ block body
         ul#gallery
           each val, index in ['I Learning Front End', 'I Enjoy Studying', 'I like teach others', 'Sometimes, I like loneliness', 'Be better every day']
             li
-              a(href="images/" + "0" + ".jpg", target="_blank")
+              a(href="images/" + index + ".jpg", target="_blank")
                 img(src="images/" + "0" + ".jpg", alt="")
                 p= val
       
