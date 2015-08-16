@@ -1,4 +1,4 @@
-## Bores template
+## Template
 
 To run this project hit your console with
 
